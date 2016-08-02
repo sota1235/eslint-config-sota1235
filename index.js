@@ -1,7 +1,5 @@
 module.exports = {
-  extends: [
-    'airbnb',
-  ].map(require.resolve),
+  extends: 'airbnb',
   rules: {
     "no-unused-vars": ["warn"],
     "no-multi-spaces": [
