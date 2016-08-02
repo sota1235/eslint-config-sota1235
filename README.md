@@ -1,21 +1,30 @@
-Name
+eslint-config-sota1235
 ====
 
-Overview
+ESLint config for [@sota1235](https://github.com/sota1235).
 
 ### Description
 
-### Demo
-
-### VS.
-
 ### Requirement
 
-### Usage
+- node.js v6.1~
+- npm v3.9~
 
 ### Install
 
-### Contribution
+Install by using npm.
+
+```shell
+npm i -D eslint-config-sota1235
+```
+
+And fix your `.eslintrc`.
+
+```json
+{
+  "extends": "sota1235"
+}
+```
 
 ### Licence
 
