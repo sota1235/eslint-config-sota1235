@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-sota1235",
-  "version": "1.0.0",
-  "description": "Name ====",
+  "name": "@sota1235/eslint-config-sota1235",
+  "version": "2.0.0",
+  "description": "ESLint configuration for @sota1235",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
