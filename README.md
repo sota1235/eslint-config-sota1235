@@ -1,5 +1,4 @@
-eslint-config-sota1235
-====
+# eslint-config-sota1235
 
 ESLint config for [@sota1235](https://github.com/sota1235).
 
