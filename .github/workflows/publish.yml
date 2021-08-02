@@ -52,6 +52,6 @@ jobs:
           git_tag_prefix: "v"
 
       - name: Publishing to npm
-        run: npm publish
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
