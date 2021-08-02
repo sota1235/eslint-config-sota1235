@@ -1,5 +1,10 @@
 name: Publishing to npm
-on: [push]
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - "!*"
 
 jobs:
   check-version:
