@@ -6,8 +6,7 @@ jobs:
     name: Checking wheather it can be published or not
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        run: actions/checkout@v2
+      - uses: actions/checkout@v2
 
       - name: Setting up Node.js
         uses: actions/setup-node@v2
@@ -23,8 +22,7 @@ jobs:
     needs: check-version
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        run: actions/checkout@v2
+      - uses: actions/checkout@v2
 
       - name: Setting up Node.js
         uses: actions/setup-node@v2
