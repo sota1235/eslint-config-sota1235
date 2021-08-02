@@ -1,12 +1,13 @@
 {
-  "name": "eslint-config-sota1235",
-  "version": "1.0.0",
-  "description": "Name ====",
+  "name": "@sota1235/eslint-config",
+  "version": "2.0.0",
+  "description": "ESLint configuration for @sota1235",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./index.js -c ./index.js",
-    "refactor": "eslint ./index.js -c ./index.js --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "format": "npm run lint:fix && prettier . --write"
   },
   "keywords": [
     "eslint",
@@ -15,12 +16,16 @@
   "author": "sota1235",
   "license": "MIT",
   "dependencies": {
-    "eslint-config-airbnb": "^10.0.0",
-    "eslint-plugin-import": "^1.12.0",
-    "eslint-plugin-jsx-a11y": "^2.0.1",
-    "eslint-plugin-react": "^6.0.0"
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
+    "eslint": ">= 7",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.24.0"
   },
   "devDependencies": {
-    "eslint": "^3.2.2"
+    "prettier": "^2.3.2"
+  },
+  "peerDependencies": {
+    "eslint": ">= 7"
   }
 }

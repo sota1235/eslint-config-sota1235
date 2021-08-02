@@ -1,25 +1,34 @@
 module.exports = {
-  extends : 'airbnb',
-  rules   : {
-    'no-unused-vars'  : ['warn'],
-    'no-multi-spaces' : [
-      'error',
-      {
-        'exceptions': {
-          'VariableDeclarator' : true,
-          'ImportDeclaration'  : true,
-        },
+  extends: [
+    "eslint:recommended",
+    "prettier/prettier",
+  ],
+  env: { node: true, es6: true },
+  parser: "@typescript-eslint/parser",
+  overrides: [
+    {
+      files: ["**/*.{tsx,ts}"],
+      extends: [
+        "plugin:@typescript-eslint/recommended",
+        "prettier",
+      ],
+      plugins: ["@typescript-eslint"],
+      parserOptions: {
+        sourceType: "module",
+        project: "./tsconfig.json",
+        warnOnUnsupportedTypeScriptVersion: true,
       },
-    ],
-    'no-console'  : ['off'],
-    'key-spacing' : ['error', {
-      'align': {
-        'beforeColon' : true,
-        'afterColon'  : true,
-        'on'          : 'colon',
+      rules: {
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
       },
-    }],
-    'react/jsx-boolean-value' : ['off'],
-    'react/prop-types'        : ['warn'],
-  },
+    },
+    {
+      files: ["**/*.test.{tsx,ts}"],
+      rules: {
+        "@typescript-eslint/ban-ts-ignore": "off",
+      },
+    },
+  ],
 };

@@ -1,28 +1,20 @@
-eslint-config-sota1235
-====
+# @sota1235/eslint-config
 
 ESLint config for [@sota1235](https://github.com/sota1235).
 
 ### Description
 
-### Requirement
-
-- node.js v6.1~
-- npm v3.9~
-
 ### Install
 
-Install by using npm.
-
 ```shell
-npm i -D eslint-config-sota1235
+npm i -D @sota1235/eslint-config
 ```
 
 And fix your `.eslintrc`.
 
 ```json
 {
-  "extends": "sota1235"
+  "extends": "@sota1235/eslint-config"
 }
 ```
 
