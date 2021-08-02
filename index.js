@@ -9,7 +9,6 @@ module.exports = {
     {
       files: ["**/*.{tsx,ts}"],
       extends: [
-        "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
         "prettier",
       ],
