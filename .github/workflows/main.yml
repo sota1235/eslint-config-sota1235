@@ -22,6 +22,9 @@ jobs:
       - name: npm install
         run: npm ci
 
+      - name: validate renovate config
+        run: npx --package renovate -c 'renovate-config-validator'
+
       # TODO: enable
       # - name: lint
       #  run: npm run lint
