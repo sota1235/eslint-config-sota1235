@@ -1,6 +1,6 @@
 {
   "name": "@sota1235/eslint-config",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "ESLint configuration for @sota1235",
   "main": "index.js",
   "scripts": {
@@ -16,8 +16,8 @@
   "author": "sota1235",
   "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.28.5",
-    "@typescript-eslint/parser": "^4.28.5",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
     "eslint": ">= 7",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.24.0"
