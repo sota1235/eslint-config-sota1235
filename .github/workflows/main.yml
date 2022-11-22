@@ -19,6 +19,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+          cache: npm
 
       - name: npm install
         run: npm ci
@@ -26,6 +27,5 @@ jobs:
       - name: validate renovate config
         run: npx --package renovate -c 'renovate-config-validator'
 
-      # TODO: enable
-      # - name: lint
-      #  run: npm run lint
+      - name: lint
+        run: npm run lint
