@@ -1,6 +1,6 @@
 {
   "name": "@sota1235/eslint-config",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "ESLint configuration for @sota1235",
   "main": "index.js",
   "scripts": {
@@ -15,15 +15,17 @@
   ],
   "author": "sota1235",
   "license": "MIT",
+  "repository": "https://github.com/sota1235/eslint-config-sota1235",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
     "eslint": ">= 7",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-react": "^7.24.0"
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.31.0"
   },
   "devDependencies": {
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "typescript": "^4.9.3"
   },
   "peerDependencies": {
     "eslint": ">= 7"
