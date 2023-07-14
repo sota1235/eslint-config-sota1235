@@ -17,8 +17,8 @@
   "license": "MIT",
   "repository": "https://github.com/sota1235/eslint-config-sota1235",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.44.0",
-    "@typescript-eslint/parser": "^5.44.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
     "eslint": ">= 7",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.31.0"
