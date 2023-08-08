@@ -24,7 +24,7 @@ jobs:
           cache: npm
 
       - name: npm install
-        run: npm ci
+        run: npm ci --no-audit --no-fund
 
       - name: validate renovate config
         run: npx --package renovate -c 'renovate-config-validator'
