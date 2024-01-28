@@ -1,9 +1,9 @@
-name: Main
+name: Check code quality
 
 on: [push]
 
 jobs:
-  build:
+  check-code-quality:
     runs-on: ubuntu-latest
     permissions:
       contents: read
