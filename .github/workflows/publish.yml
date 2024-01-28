@@ -6,6 +6,8 @@ on:
     tags:
       - "!*"
 
+concurrency: publish-to-npm
+
 jobs:
   check-version:
     name: Checking wheather it can be published or not
