@@ -15,7 +15,7 @@ jobs:
     permissions:
       contents: read
     outputs:
-      can-publish: ${{ steps.can-publish.outputs.can-publish }}
+      can-publish: ${{ steps.check-status.outputs.can-publish }}
     steps:
       - uses: actions/checkout@v4
 
@@ -27,6 +27,7 @@ jobs:
           cache: npm
 
       - name: Executing can-npm-publish
+        id: check-status
         run: |
           if npx can-npm-publish --verbose; then
             echo "can-publish=1" >> "$GITHUB_OUTPUT"
