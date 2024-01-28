@@ -1,9 +1,17 @@
-name: Main
+name: Check code quality
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  build:
+  check-code-quality:
     runs-on: ubuntu-latest
     permissions:
       contents: read
