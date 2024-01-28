@@ -29,10 +29,10 @@ jobs:
       - name: Executing can-npm-publish
         run: |
           if npx can-npm-publish --verbose; then
-            echo "can-publish=1" >> $GITHUB_OUTPUT
+            echo "can-publish=1" >> "$GITHUB_OUTPUT"
           else
             echo "Publishing to npm will be skipped"
-            echo "can-publish=0" >> $GITHUB_OUTPUT
+            echo "can-publish=0" >> "$GITHUB_OUTPUT"
           fi
 
   release:
