@@ -2,6 +2,8 @@
 
 ESLint config for [@sota1235](https://github.com/sota1235).
 
+Now only supports eslint v9.
+
 ### Description
 
 ### Install
@@ -10,12 +12,18 @@ ESLint config for [@sota1235](https://github.com/sota1235).
 npm i -D @sota1235/eslint-config
 ```
 
-And fix your `.eslintrc`.
+You can use like this.
 
-```json
-{
-  "extends": "@sota1235/eslint-config"
-}
+```javascript
+import { configs } from '@sota1235/eslint-config';
+
+export default [
+  ...configs.base(),
+  ...configs.typescript({
+    tsconfigPath: './tsconfig.json', // optional
+  }),
+  ...configs.react(),
+];
 ```
 
 ### Licence
