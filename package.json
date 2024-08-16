@@ -33,6 +33,7 @@
     "typescript": "^5.0.0"
   },
   "peerDependencies": {
-    "eslint": ">= 9"
+    "eslint": ">= 9",
+    "@typescript-eslint/eslint-plugin": ">= 8"
   }
 }
