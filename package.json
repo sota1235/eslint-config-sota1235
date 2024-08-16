@@ -2,7 +2,7 @@
   "name": "@sota1235/eslint-config",
   "version": "5.0.0",
   "description": "ESLint configuration for @sota1235",
-  "main": "src/base.js",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
     "lint": "eslint",
