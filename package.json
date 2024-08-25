@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "lint": "eslint",
+    "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "format": "npm run lint:fix && prettier . --write"
   },
@@ -21,16 +21,16 @@
     "@types/eslint__js": "8.42.3",
     "@typescript-eslint/eslint-plugin": "8.2.0",
     "@typescript-eslint/parser": "8.2.0",
-    "eslint": "9.9.0",
-    "eslint-config-prettier": "9.1.0",
+    "eslint": ">= 9",
     "eslint-plugin-prettier": "5.2.1",
     "eslint-plugin-react": "^7.35.0",
     "globals": "^15.9.0",
     "typescript-eslint": "8.2.0"
   },
   "devDependencies": {
+    "@types/eslint": "9.6.0",
     "prettier": "^3.0.0",
-    "typescript": "^5.0.0"
+    "typescript": "5.5.4"
   },
   "peerDependencies": {
     "eslint": ">= 9"

@@ -1,10 +1,11 @@
+// @ts-check
 import tseslint from "typescript-eslint";
 import tsPlugin from "@typescript-eslint/eslint-plugin";
 import base from "./base.js";
 
 /**
  * @param { { tsconfigPath?: string } } options
- * @return { import("eslint").Linter.FlatConfig[] }
+ * @return { import("eslint").Linter.Config[] }
  */
 export default ({ tsconfigPath = "./tsconfig.json" }) => [
   ...base(),
