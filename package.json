@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "lint": "eslint",
+    "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "format": "npm run lint:fix && prettier . --write"
   },
@@ -22,7 +22,6 @@
     "@typescript-eslint/eslint-plugin": "8.2.0",
     "@typescript-eslint/parser": "8.2.0",
     "eslint": ">= 9",
-    "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.2.1",
     "eslint-plugin-react": "^7.35.0",
     "globals": "^15.9.0",
