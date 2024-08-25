@@ -1,3 +1,4 @@
+// @ts-check
 import base from "./base.js";
 import react from "eslint-plugin-react";
 import globals from "globals";

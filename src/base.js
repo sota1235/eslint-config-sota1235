@@ -1,3 +1,4 @@
+// @ts-check
 import eslint from "@eslint/js";
 import prettier from "eslint-plugin-prettier/recommended";
 import globals from "globals";
