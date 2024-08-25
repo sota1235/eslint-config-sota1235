@@ -3,7 +3,7 @@ import react from "eslint-plugin-react";
 import globals from "globals";
 
 /**
- * @return { import("eslint").Linter.FlatConfig[] }
+ * @return { import("eslint").Linter.Config[] }
  */
 export default () => [
   ...base(),
