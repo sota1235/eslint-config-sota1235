@@ -1,6 +1,6 @@
 {
   "name": "@sota1235/eslint-config",
-  "version": "5.0.3",
+  "version": "5.0.4",
   "description": "ESLint configuration for @sota1235",
   "main": "src/index.js",
   "type": "module",
