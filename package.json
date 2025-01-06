@@ -1,6 +1,6 @@
 {
   "name": "@sota1235/eslint-config",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "ESLint configuration for @sota1235",
   "main": "src/index.js",
   "type": "module",
@@ -22,7 +22,7 @@
     "@typescript-eslint/eslint-plugin": "8.11.0",
     "@typescript-eslint/parser": "8.11.0",
     "eslint": ">= 9",
-    "eslint-plugin-prettier": "5.2.1",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.35.0",
     "globals": "^15.9.0",
     "typescript-eslint": "8.11.0"
