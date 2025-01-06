@@ -1,6 +1,5 @@
 // @ts-check
 import tseslint from "typescript-eslint";
-import tsPlugin from "@typescript-eslint/eslint-plugin";
 import base from "./base.js";
 
 /**
@@ -22,7 +21,7 @@ export default ({ tsconfigPath = "./tsconfig.json" }) => [
   {
     files: ["**/*.test.{tsx,ts,cts,mts}"],
     plugins: {
-      "@typescript-eslint": tsPlugin,
+      "@typescript-eslint": tseslint.plugin,
     },
     rules: {
       "@typescript-eslint/no-explicit-any": "off",
