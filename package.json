@@ -17,12 +17,12 @@
   "license": "MIT",
   "repository": "https://github.com/sota1235/eslint-config-sota1235",
   "dependencies": {
-    "@eslint/js": "9.13.0",
-    "@types/eslint__js": "8.42.3",
+    "@eslint/js": "^9.17.0",
+    "@types/eslint__js": "^8.42.3",
     "eslint": ">= 9",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.37.3",
-    "globals": "^15.9.0",
+    "globals": "15.14.0",
     "typescript-eslint": "8.19.0"
   },
   "devDependencies": {
