@@ -7,7 +7,8 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "format": "npm run lint:fix && prettier . --write"
+    "format": "npm run lint:fix && prettier . --write",
+    "update-checksum": "aqua update-checksum -prune"
   },
   "keywords": [
     "eslint",
