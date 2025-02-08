@@ -1,0 +1,32 @@
+name: Check workflow files
+
+on:
+  pull_request:
+    paths:
+      - .github/workflows/*
+      - .github/actions/*
+      - aqua.yaml
+
+jobs:
+  check-workflow-files:
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Setting up aqua
+        uses: aquaproj/aqua-installer@e2d0136abcf70b7a2f6f505720640750557c4b33 # v3.1.1
+        with:
+          aqua_version: v2.43.2
+
+      - name: Run actionlint
+        run: actionlint
+
+      - name: Run ghalint
+        run: |
+          ghalint run
+          ghalint run-action
