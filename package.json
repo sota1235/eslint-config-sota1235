@@ -18,7 +18,7 @@
   "license": "MIT",
   "repository": "https://github.com/sota1235/eslint-config-sota1235",
   "dependencies": {
-    "@eslint/js": "^9.20.0",
+    "@eslint/js": "^10.0.0",
     "@types/eslint__js": "^9.0.0",
     "eslint": ">= 9",
     "eslint-config-prettier": "^10.0.1",
