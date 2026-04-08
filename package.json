@@ -29,7 +29,7 @@
   "devDependencies": {
     "@types/eslint": "9.6.1",
     "prettier": "^3.0.0",
-    "typescript": "5.9.3"
+    "typescript": "6.0.2"
   },
   "peerDependencies": {
     "eslint": ">= 9"
